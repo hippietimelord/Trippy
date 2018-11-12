@@ -1,0 +1,51 @@
+body {
+	background-color: rgb(31,115,125);
+}
+
+nav {
+	background-color:rgba(255,255,255,0.5);
+	overflow: hidden;
+	}
+
+nav a {
+	display: block;
+	color: DarkSlateGray;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	padding: 12px 40px;
+	text-decoration: none;
+	float: left;
+	}
+	
+nav a:hover:not(.active) {
+	background-color: rgba(255,255,255,0.5);
+	}
+	
+.active {
+	background-color: #ffffff;
+	}
+	
+input[type=text] {
+	width: 200px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 15px;
+	background-color: rgba(255,255,255,0.5);
+	background-image: url('Images/searchicon.png');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+}
+		
+footer#all {
+	padding: 1px 10px 1px 0px;
+	background-color: rgba(255,255,255,0.5);
+	color: DarkSlateGray;
+	position: bottom;
+	clear: both;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}

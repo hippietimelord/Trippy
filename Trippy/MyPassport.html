@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>My Passport</title>
+	<meta charset="UTF-8">
+	<!-- 
+		Developed by Afsana Islam on 07/10/16
+		Last updated on 05/12/16
+	-->
+	<link rel="stylesheet" type="text/css" href="Layout.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="Images/favicon.ico"/>
+	
+	<style>
+	div#left {
+		float: left;
+		width: 39%;
+		margin: 10px 0;
+		background-color: rgba(255,255,255,0.5);
+		font-family: 'Raleway', sans-serif;
+	}
+	#myTable{
+		border-collapse: collapse;
+		width: 100%;
+		border: none;
+		font-size: 18px;
+		color: DarkSlateGray;
+	}
+	#myTable th, #myTable td {
+		text-align: left;
+		padding: 12px;
+	}
+	#myTable tr {
+		border-bottom: 1px solid #ddd;
+	}
+	#myTable tr.header, #myTable tr:hover:not(.active) {
+		background-color: #ffffff;
+	}
+	.active {
+		background-color: #ffffff;
+	}
+	div#post {
+		float: left;
+		margin: 10px 0;
+		width: 100%;
+		font-family: 'Raleway', sans-serif;
+	}
+	div#map {
+		margin: 10px 0;
+		float: right;
+		width: 800px;
+		height: 822px;
+	}
+	.button {
+		background-color: #990000;
+		border: none;
+		color: white;
+		padding: 5px 10px;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+		margin: 10px;
+		float: right;
+	}
+	h3 {
+		text-align: center;
+		color: DarkSlateGray;
+	}
+	p {
+		text-indent: 20px;
+		color: DarkSlateGray;
+	}
+	</style>
+</head>
+<body>
+	<nav>
+		<a style="font-family: 'Lobster', cursive;font-size: 25px;color: rgb(31,115,125);text-shadow: -8px 0 #a6a6a6;padding: 7px 40px;">Trippy&nbsp;<img src="Images/logo.png" alt="Logo" style="width: 25px;"></a>
+		<a href="Home.html">Home</a>
+		<a href="MyProfile.html">My Profile</a>
+		<a class="active" href="MyPassport.html">My Passport</a>
+		<a style="float: right;" href="LogOut.html">Log Out</a></li>
+		<form style="float: right;">
+			<input type="text" name="search" placeholder="Search...">
+		</form>
+	</nav>
+	
+	<main>
+		<section>
+			<div id="left">
+				<table id="myTable">
+					<tr class="header">
+						<th style="width: 60%;">Country</th>
+						<th style="width: 40%;">City</th>
+					</tr>
+					<tr class="active">
+						<td>United Arab Emirates</td>
+						<td>Abu Dhabi</td>
+					</tr>
+					<tr>
+						<td>China</td>
+						<td>Beijing</td>
+					</tr>
+					<tr>
+						<td>Hungary</td>
+						<td>Budapest</td>
+					</tr>
+					<tr>
+						<td>Bangladesh</td>
+						<td>Dhaka</td>
+					</tr>
+					<tr>
+						<td>Norway</td>
+						<td>Oslo</td>
+					</tr>
+				</table>
+				<input type="button" class="button" value="Add Destination">
+				
+				
+				<div id="post">
+					<a href="#"><h3>My Abu Dhabi Experience</h3></a>
+					<p style="padding: 15px;">Someone please pick my mouth up from the ground.</p>
+					<p style="padding: 15px;">I’m trying to recall if I’ve ever been inside a mosque before, but I’m quite certain this is my first time being in one of this calibre. 
+					The Sheikh Zhayed Grand Mosque is without a doubt a must-see when you visit Abu Dhabi. Whatever your religion might be, it doesn’t change 
+					the fact that this mosque is a work of art that deserves to be appreciated with an open mind. Hopefully my photographs will convince you.</p>
+					<p style="padding: 15px;">Before we get on with it, here’s an important note when visiting the mosque: Wear proper attire! Women must be covered from head to toe. 
+					Literally. Wear long pants and long-sleeved shirts that are not skintight, then wear a scarf or burka on the head to hide majority of the 
+					hair. Sandals are okay as far as I know. Men must also wear long pants and proper shirts. When we are in the house of another, we must never 
+					lose sight of respect.&nbsp;<a target="_blank" href="http://thetummytrain.com/2015/04/08/abu-dhabi-travel-blog-sheikh-zayed-grand-mosque/" >Show more...</a></p>
+					
+				</div>
+			</div>
+			
+	
+			<div id="map"></div>
+				<script>
+					function myMap() {
+					  var mapCanvas = document.getElementById("map");
+					  var mapOptions = {center: new google.maps.LatLng(24.4539, 54.3773), zoom: 12};
+					  var map = new google.maps.Map(mapCanvas, mapOptions);
+					}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>		
+		</section>		
+	</main>
+	
+	<footer id="all">
+		<p style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;">&copy 2016 Trippy. Created by Afsana Islam. All rights reserved.</p>
+	</footer>	
+</body>
+</html>

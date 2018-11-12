@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<!-- 
+		Developed by Afsana Islam on 07/10/16
+		Last updated on 05/12/16
+	-->
+	<link rel="stylesheet" type="text/css" href="Layout.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="Images/favicon.ico"/>
+	
+	<style>
+		div#left {
+			float: left;
+			width: 65%;
+		}
+		.post {
+			background-color: rgba(255,255,255,0.5);
+			margin: 10px 0;
+			padding: 20px;
+			width: 94%;
+		}
+		a#image{
+			display: inline-block;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			padding: 5px;#ffffff
+			transition: 0.3s;
+		}
+		a:hover {
+			box-shadow: 0 0 2px 1px #ffffff;
+		}
+		textarea {
+			width: 100%;
+			height: 100px;
+			padding: 12px 20px;
+			box-sizing: border-box;
+			border: 2px solid ;
+			border-radius: 4px;
+			background-color: rgba(255,255,255,0.5);
+			font-size: 16px;
+			font-family: verdana;
+			resize: none;
+		}
+		.button {
+			background-color: #000066;
+			border: none;
+			color: white;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.profileImg {
+			width: 50px;
+			height: 50px;
+			border-radius: 100px;
+		}
+		h4 {
+			font-family: verdana;
+			color: DarkSlateGray;
+			display: inline-block;
+		}
+		p {
+			font-family: verdana;
+			font-size: 15px;
+		}
+		span {
+			font-family: verdana;
+			font-size: 15px;
+			float: right;"
+		}
+		#map {
+			width: 100%;
+			height: 500px;
+		}
+		div#right {
+			float: right;
+			width: 35%;
+		}
+		.message {
+			background-color: rgba(255,255,255,0.5);
+			margin: 10px 0;
+			padding: 20px;
+			text-align: center;
+		}
+		h3 {
+			font-family: 'Raleway', sans-serif;
+			color: DarkSlateGray; 
+			text-align: center;
+		}
+		.request {
+			background-color: rgba(255,255,255,0.5); 
+			margin: 10px 0;
+			padding: 20px;
+			text-align: center;
+		}
+		table th, td {
+			text-align: left;
+			font-family: 'Raleway', sans-serif; 
+			color: DarkSlateGray;
+			padding: 5px;
+			cursor: pointer;
+		}
+	</style>
+	
+</head>
+<body>
+	<nav>
+		<a style="font-family: 'Lobster', cursive;font-size: 25px;color: rgb(31,115,125);text-shadow: -8px 0 #a6a6a6;padding: 7px 40px;">Trippy&nbsp;<img src="Images/logo.png" alt="Logo" style="width: 25px;"></a>
+		<a class="active" href="Home.html">Home</a>
+		<a href="MyProfile.html">My Profile</a>
+		<a href="MyPassport.html">My Passport</a>
+		<a style="float: right;" href="LogOut.html">Log Out</a></li>
+		<form style="float: right;">
+			<input type="text" name="search" placeholder="Search...">
+		</form>
+	</nav>
+	
+	<main>
+		<section>
+			<div id="left">
+				<div class="post">
+					<form>
+						<textarea placeholder="Status: Share your experience here..."></textarea>
+						<br><br>
+						<input type="button" class="button" value="Post">
+					</form>
+					<br>
+				</div>
+				
+				<div class="post">
+					<a><img class="profileImg" src="Images/avatar2.png" alt="LucusRussell"></a>
+					<span>1 min</span>
+					<h4>Lucas Russell</h4>
+					<hr>
+					<p>Had a great day at the Alps! Check out the photos</p>
+					<a class="image" target="_blank" href="Images/alps1.JPG"><img src="Images/alps1.JPG" alt="Alps1" height="150"></a>
+					<a class="image" target="_blank" href="Images/alps2.JPG"><img src="Images/alps2.JPG" alt="Alps2" height="150"></a>
+					<form>
+						<br>
+						<input type="button" class="button" value="Like" style="background-color: #ff3300">
+						<input type="button" class="button" value="Comment" style="background-color: #ff3300">
+					</form>
+				</div>
+				
+				<div class="post"> 
+					<a><img class="profileImg" src="Images/avatar3.png" alt="JanicePrice"></a>
+					<span>8 min</span>
+					<h4>Janice Price</h4>
+					<hr>
+					<p>Just got back from the Penang today! Check out all my trip guide - </p>
+					<a href="Penang.html" style="font-family: verdana; font-size: 15px;"><b>My Mini Guide to George Town, Penang</b></a>
+					<form>
+						<br>
+						<input type="button" class="button" value="Like" style="background-color: #ff3300">
+						<input type="button" class="button" value="Comment" style="background-color: #ff3300">
+					</form>
+				</div>
+				
+				<div class="post">
+					<a><img class="profileImg" src="Images/avatar4.png" alt="HildaWalsh">
+					<span>20 min</span>
+					<h4>Hilda Walsh</h4>
+					<hr>
+					<p>Next up: <b>Bangladesh</b></p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/dMTB2QF2FAQ" frameborder="0" allowfullscreen>
+					</iframe>
+					<form>
+						<br>
+						<input type="button" class="button" value="Like" style="background-color: #ff3300">
+						<input type="button" class="button" value="Comment" style="background-color: #ff3300">
+					</form>
+				</div>
+			</div>
+			
+			<div id="right">
+				<div class="message">
+					<table width="100%">
+						<h3>Messages(2)</h3>
+						<hr>
+						<tr>
+							<th>Frank Sinatra</th>
+							<th>You have a new message!</th> 
+						</tr>
+						<tr>
+							<th>Art Vandaley</th>
+							<th>You have a new message!</th>
+						</tr>
+						<tr>
+							<td>Jessica Jones</td>
+							<td>You should check out Lak...</td> 
+						</tr>
+						<tr>
+							<td>Luke Cage</td>
+							<td>I have been hiking at th...</td> 
+						</tr>
+						<tr>
+							<td>John Smith</td>
+							<td>Have you seen the pictur...</td> 
+						</tr>
+						<tr>
+							<td>Jason Momoa</td>
+							<td>I shared the link on you...</td> 
+						</tr>
+						<tr>
+							<td>Martha Jones</td>
+							<td>I have been collecting m...</td> 
+						</tr>
+					</table>
+				</div>
+				
+				<div class="request">
+					<p><img class="profileImg" src="Images/avatar5.png" alt="MyPicture" style="width: 150px;height: 150px;border-radius: 100px;">
+					<h4>Leslie Knope</h4>
+					<br>
+					<input type="button" class="button" value="Accept Friend Request" style="background-color: #006600;">
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer id="all">
+		<p style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;">&copy 2016 Trippy. Created by Afsana Islam. All rights reserved.</p>
+	</footer>			
+</body>
+</html>

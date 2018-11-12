@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>My Profile</title>
+	<meta charset="UTF-8">
+	<!-- 
+		Developed by Afsana Islam on 07/10/16
+		Last updated on 05/12/16
+	-->
+	<link rel="stylesheet" type="text/css" href="Layout.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="Images/favicon.ico"/>
+	
+	<style>
+		div#left {
+			float: left;
+			width: 25%;
+		}
+		.picture {
+			background-color: rgba(255,255,255,0.5);
+			margin: 10px 0;
+			padding: 40px;
+			text-align: center;
+			width: 72%;
+		}
+		.tag {
+			background-color: rgba(255,255,255,0.5);
+			margin: 10px 0;
+			padding: 40px;
+			text-align: center;
+			width: 72%;
+			cursor: pointer;
+		}
+		div#right {
+			float: right;
+			width: 75%;
+		}
+		.details {
+			background-color: rgba(255,255,255,0.5);
+			margin: 10px 0;
+			padding: 40px;
+			width: 92%;
+		}
+		p {
+			font-family: 'Raleway', sans-serif;
+			font-size: 19px;
+			color: DarkSlateGray;
+		}
+		a#image{
+			display: inline-block;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			padding: 5px;#ffffff
+			transition: 0.3s;
+		}
+		a:hover {
+			box-shadow: 0 0 2px 1px #ffffff;
+		}
+		.photo {
+			background-color: rgba(255,255,255,0.5);
+			margin: 10px 0;
+			padding: 40px;
+			width: 92%;
+		}
+		.button {
+			background-color: #990000;
+			border: none;
+			color: white;
+			padding: 5px 10px;
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a style="font-family: 'Lobster', cursive;font-size: 25px;color: rgb(31,115,125);text-shadow: -8px 0 #a6a6a6;padding: 7px 40px;">Trippy&nbsp;<img src="Images/logo.png" alt="Logo" style="width: 25px;"></a>
+		<a href="Home.html">Home</a>
+		<a class="active" href="MyProfile.html">My Profile</a>
+		<a href="MyPassport.html">My Passport</a>
+		<a style="float: right;" href="LogOut.html">Log Out</a></li>
+		<form style="float: right;">
+			<input type="text" name="search" placeholder="Search...">
+		</form>
+	</nav>
+	
+	<main>
+		<section>
+			<div id="left">
+				<div class="picture">
+					<p><img src="Images/Ron.jpg" alt="RonSwanson" style="width: 200px;height: 200px;border-radius: 150px;object-fit: cover;"></p>
+					<br>
+					<input type="button" class="button" value="Upload Picture">
+					<br>
+					<p style="cursor: pointer; text-decoration: underline;"><b>All Friends (211)</b></p>
+				</div>
+				
+				<div class="tag">
+					<p><strong>Trippy Tags:</strong></p>
+					<p style="font-size: 17px;"><img src="Images/tag.png" alt="tag" style="width: 16px;">RiodeJaneiro&nbsp;
+					<img src="Images/tag.png" alt="tag" style="width: 16px;">Spain<br>
+					<img src="Images/tag.png" alt="tag" style="width: 16px;">UnitedStates&nbsp;
+					<img src="Images/tag.png" alt="tag" style="width: 16px;">Germany<br>
+					<img src="Images/tag.png" alt="tag" style="width: 16px;">Mexico&nbsp;
+					<img src="Images/tag.png" alt="tag" style="width: 16px;">Italy&nbsp;
+					<img src="Images/tag.png" alt="tag" style="width: 16px;">Turkey&nbsp;
+					
+					</p>
+				</div>
+				
+			</div>
+			
+			<div id="right">
+				<div class="details">
+					<p style="font-size: 25px;"><b>Profile Overview</b>
+					<input type="button" class="button" value="Edit Profile" style="float: right;">
+					</p>
+					<p><b>Name:</b> Ron Swanson</p>
+					<p><b>Gender:</b> Male</p>
+					<p><b>Date of Birth:</b> May 5<sup>th</sup>, 1961</p>
+					<p><b>Lives in:</b> Pawnee, Indiana, USA</p>
+					<p><b>Work:</b> Owner of Very Good Building Company</p>
+					<p><b>Email:</b> <a href="mailto: ronswanson01@gmail.com" style="color: #006600;">ronswanson01@gmail.com</a></p>
+					<p><b>Phone:</b> (+6)0112233445</p>
+				</div>
+				
+				<div class="photo">
+					<p style="font-size: 25px;"><b>My Photos</b>
+					<input type="button" class="button" value="Add Photos" style="float: right;">
+					</p>
+					<a class="image" target="_blank" href="Images/img1.JPG"><img src="Images/img1.JPG" alt="Img1" height="200"></a>
+					<a class="image" target="_blank" href="Images/img2.JPG"><img src="Images/img2.JPG" alt="Img2" height="200"></a>
+					<a class="image" target="_blank" href="Images/img3.JPG"><img src="Images/img3.JPG" alt="Img3" height="200"></a>
+					<a class="image" target="_blank" href="Images/img4.JPG"><img src="Images/img4.JPG" alt="Img4" height="200"></a>
+					<a class="image" target="_blank" href="Images/img5.JPG"><img src="Images/img5.JPG" alt="Img5" height="200"></a>
+					<a class="image" target="_blank" href="Images/img6.JPG"><img src="Images/img6.JPG" alt="Img6" height="200"></a>
+					<a class="image" target="_blank" href="Images/img7.JPG"><img src="Images/img7.JPG" alt="Img7" height="200"></a>
+					<a class="image" target="_blank" href="Images/img8.JPG"><img src="Images/img8.JPG" alt="Img8" height="200"></a>
+				</div>
+			</div>
+			
+	<footer id="all">
+		<p style="font-family: Arial, Helvetica, sans-serif;font-size: 17px;">&copy 2016 Trippy. Created by Afsana Islam. All rights reserved.</p>
+	</footer>			
+</body>
+</html>
